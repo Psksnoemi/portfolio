@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noémi Puskas - Punk Portfolio</title>
+    <style>
+        body {
+            background-color: black;
+            color: #f00;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 0px #0f0;
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #f00;
+        }
+        .section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            border: 2px solid #f00;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        a {
+            color: #0f0;
+            text-decoration: none;
+        }
+        button {
+            background-color: #f00;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fight for the planet, burn capitalism 🤘🤘🤘</h1>
+    <img src="avatar_punk.png" alt="Avatar" class="avatar">
+    
+    <div class="section">
+        <h2>À propos</h2>
+        <p>Passionnée par la conservation de la biodiversité et la gestion de projet.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Expérience & Éducation</h2>
+        <p><strong>Master Environmental Policy</strong> - Sciences Po Paris</p>
+        <p><strong>Bachelor Programme Europe-Afrique</strong> - Sciences Po Reims</p>
+    </div>
+    
+    <div class="section">
+        <h2>Compétences</h2>
+        <ul>
+            <li>Analyse et synthèse</li>
+            <li>Calcul d’empreinte carbone</li>
+            <li>Création de site internet</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Contact</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Ton nom" required><br><br>
+            <input type="email" id="email" placeholder="Ton email" required><br><br>
+            <textarea id="message" placeholder="Ton message" required></textarea><br><br>
+            <button type="submit">Envoyer</button>
+        </form>
+        <p id="response" style="color: #0f0;"></p>
+    </div>
+    
+    <div class="section">
+        <h2>Réseaux</h2>
+        <p><a href="https://www.linkedin.com/in/no%C3%A9mi-puskas" target="_blank">LinkedIn</a></p>
+    </div>
+    
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("response").innerText = "Merci pour ton message, je reviens vers toi vite !";
+        });
+    </script>
+</body>
+</html>
